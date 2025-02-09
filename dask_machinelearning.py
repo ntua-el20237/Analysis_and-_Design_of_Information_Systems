@@ -153,7 +153,7 @@ if __name__ == "__main__":
         baseline_runtime = None  # Reset baseline for this file
 
         # Try different worker counts
-        for workers in [2, 4, 8]:
+        for workers in [2, 4, 8, 16]:
             dask_ml(csv_file, workers, output_json, baseline_runtime)
 
             # After the first run for this CSV, update baseline runtime
